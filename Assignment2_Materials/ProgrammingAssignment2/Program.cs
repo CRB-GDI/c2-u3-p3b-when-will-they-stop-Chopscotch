@@ -29,16 +29,68 @@ namespace ProgrammingAssignment2
 				// extract input values from string
 				BuildLinkedListFromString(input);
 
-				// Add your code between this comment
-				// and the comment below. You can of
-				// course add more space between the
-				// comments as needed
+                // Add your code between this comment
+                // and the comment below. You can of
+                // course add more space between the
+                // comments as needed
+
+
+                float Total;
+				int Num;
+                int integer;
+				Num = 0;
+				Total = 0;
+
+			  integer = GetValue();
+              
+                while (integer != -1)
+				{
+					
+
+                    // get Amount of #
+					Num++;
+
+					// Get Sum
+					Total += integer;
+					
+					integer = GetValue();
+
+				}
+				
+				Console.Write(Num + " ");
+				Console.WriteLine(Total/Num);
 
 
 
-				// Don't add or modify any code below
-				// this comment
-				input = Console.ReadLine();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                // Don't add or modify any code below
+                // this comment
+                input = Console.ReadLine();
 			}
 		}
 
@@ -92,6 +144,14 @@ namespace ProgrammingAssignment2
 				value = -1;
 			}
 			return value;
+		
+
+
+
+
+
+
+
 		}
 	}
 }
